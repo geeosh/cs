@@ -14,7 +14,7 @@ class SinglyLinkedList
   end
 
   # Iterates over all the elements in the list and can perform any operation on each node
-  # Returns last node with a value in it
+  # Returns last node
   def iterate
     prev, at = nil, head
     while(!at.next.nil?) do
@@ -53,8 +53,9 @@ class SinglyLinkedList
   
   # Append an element to the tail of the list. O(n)
   def push(value)
-    tail.value = value
-    tail.next = Node.new
+    t = tail
+    t.value = value
+    t.next = Node.new
     true
   end
 

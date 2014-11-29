@@ -2,15 +2,15 @@
 
 ## Warmup Exercises in Ruby
 * Linked Lists
-** ~~Singly linked list~~
-** Doubly linked list
+  * ~~Singly linked list~~
+  * Doubly linked list
 * Binary Search
 * Sorting
-** Merge sort
-** Quick sort
+  * Merge sort
+  * Quick sort
 * BST
 * Hashing
-** Using chaining
-** Using open addressing
+  * Using chaining
+  * Using open addressing
 
 ## TBD

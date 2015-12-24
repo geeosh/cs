@@ -13,4 +13,16 @@
   * Using chaining
   * Using open addressing
 
-## TBD
+## Warmup Exercises in Python
+
+* Binary Search
+* Sorting
+  * Merge sort
+  * Quick Sort
+* Graphs
+  * Undirected Graph
+  * Directed Graph
+* Graph Search
+  * Depth-first Search
+  * Breadth-first Search
+* Shortest Path

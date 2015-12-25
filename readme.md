@@ -15,10 +15,10 @@
 
 ## Warmup Exercises in Python
 
-* Binary Search
 * Sorting
   * Merge sort
   * Quick Sort
+* ~~Binary Search~~
 * Graphs
   * Undirected Graph
   * Directed Graph

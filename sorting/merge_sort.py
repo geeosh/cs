@@ -9,6 +9,11 @@ class MergeSort:
   def __init__(self, items):
     self.items = items
 
+    # Buffers hold elements to merge
+    # They are FIFO queues, deque is best data structure in Python for this
+    self.buffer1 = deque()
+    self.buffer2 = deque()
+
   # Sort items
   def sort(self, low = None, high = None):
     if(low == None):
@@ -24,31 +29,28 @@ class MergeSort:
 
   # Merge together results
   def _merge(self, low, middle, high):
-    # Buffers hold elements to merge
-    # They are FIFO queues, deque is best data structure in Python for this
-    buffer1 = deque(); buffer2 = deque()
-
     # For loops with range are not inclusive of last element, so need to add 1
     for i in range(low, middle + 1):
-      buffer1.append(self.items[i])
+      self.buffer1.append(self.items[i])
 
     for i in range(middle + 1, high + 1):
-      buffer2.append(self.items[i])
+      self.buffer2.append(self.items[i])
 
     i = low
-    while(len(buffer1) > 0 and len(buffer2) > 0):
-      if(buffer1[0] <= buffer2[0]):
-        self.items[i] = buffer1.popleft()
+    while(len(self.buffer1) > 0 and len(self.buffer2) > 0):
+      # Pick lowest order items off head of buffers
+      if(self.buffer1[0] <= self.buffer2[0]):
+        self.items[i] = self.buffer1.popleft()
       else:
-        self.items[i] = buffer2.popleft()
+        self.items[i] = self.buffer2.popleft()
       i += 1
 
-    while(len(buffer1) > 0):
-      self.items[i] = buffer1.popleft()
+    while(len(self.buffer1) > 0):
+      self.items[i] = self.buffer1.popleft()
       i += 1
 
-    while(len(buffer2) > 0):
-      self.items[i] = buffer2.popleft()
+    while(len(self.buffer2) > 0):
+      self.items[i] = self.buffer2.popleft()
       i += 1
 
 import random

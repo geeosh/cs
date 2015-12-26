@@ -16,7 +16,7 @@
 ## Warmup Exercises in Python
 
 * Sorting
-  * Merge sort
+  * ~~Merge sort~~
   * Quick Sort
 * ~~Binary Search~~
 * Graphs

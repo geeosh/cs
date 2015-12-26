@@ -17,7 +17,7 @@
 
 * Sorting
   * ~~Merge sort~~
-  * Quick Sort
+  * ~~Quick Sort~~
 * ~~Binary Search~~
 * Graphs
   * Undirected Graph

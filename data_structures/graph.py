@@ -47,6 +47,8 @@ class Graph:
         # At head, so assign
         if(prev is None):
           self.edges[x] = edge.next
+          if(self.edges[x] == None):
+            self.num_vertices -= 1
         else:
           prev.next = edge.next
         

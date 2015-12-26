@@ -23,5 +23,5 @@
   * ~~Adjacency List (for undirected & directed graphs)~~
 * Graph Search
   * Depth-first Search
-  * Breadth-first Search
+  * Breadth-first Search (run as a package with: ```python -im searching.breadth_first_search```)
 * Shortest Path

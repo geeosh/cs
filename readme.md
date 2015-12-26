@@ -20,8 +20,7 @@
   * ~~Quick Sort~~
 * ~~Binary Search~~
 * Graphs
-  * Undirected Graph
-  * Directed Graph
+  * ~~Adjacency List (for undirected & directed graphs)~~
 * Graph Search
   * Depth-first Search
   * Breadth-first Search

@@ -16,7 +16,7 @@ class BinarySearch:
     if(high == None):
       high = len(self.items) - 1
 
-    # Key not found    
+    # Key not found
     if(low > high):
       return -1
 

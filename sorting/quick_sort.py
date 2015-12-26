@@ -1,8 +1,7 @@
 #!/usr/bin/python
-# Merge Sort class that allows for O(n log n) sorting of items, using a divide-and-conquer strategy
-# There is some memory overhead as it uses two buffers to store items when they are merged
-
-from collections import deque
+# Quick Sort class that allows for O(lg 2 n) to O(n^2) sorting of items, 
+#  depending on where pivot picked happens to be within context of all sorted items
+# Low memory overhead as it simply swaps items during comparisons
 
 class QuickSort:
 
@@ -36,7 +35,7 @@ class QuickSort:
 
 import random
 
-print "Initialize QuickSort with array"
+print "Initialize QuickSort with list"
 
 items = [3, 45, 89, 1, 7, 34940, 222222, 18, 2342, 344, 34, 233]
 

@@ -55,7 +55,7 @@ class MergeSort:
 
 import random
 
-print "Initialize MergeSort with array"
+print "Initialize MergeSort with list"
 
 items = [3, 45, 89, 1, 7, 34940, 222222, 18, 2342, 344, 34, 233]
 

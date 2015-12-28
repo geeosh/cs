@@ -22,6 +22,6 @@
 * Graphs
   * ~~Adjacency List (for undirected & directed graphs)~~
 * Graph Search
-  * Depth-first Search
-  * Breadth-first Search (run as a package with: ```python -im searching.breadth_first_search```)
+  * ~~Depth-first Search~~ (run as a package with: ```python -im searching.depth_first_search```)
+  * ~~Breadth-first Search~~ (run as a package with: ```python -im searching.breadth_first_search```)
 * Shortest Path

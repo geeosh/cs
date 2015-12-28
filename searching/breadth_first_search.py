@@ -16,7 +16,7 @@ class BFS:
 
   def process_graph(self, start):
     queue = deque()
-    vertex, y = 0, 0
+    vertex, y = None, None
 
     queue.append(start)
     self.discovered[start] = True
@@ -49,10 +49,15 @@ class BFS:
     print "Processed edge (%d,%d)" % (x,y)
 
   def find_path(self, start, end):
+    path = []
+
     if(start == end or end == -1):
-      print str(start)
+      path.append(start)
     else:
-      self.find_path(start, self.parent[end])
+      path += self.find_path(start, self.parent[end])
+      path.append(end)
+
+    return path
 
 
 print "Initialize Graph:"
@@ -72,4 +77,4 @@ bfs = BFS(graph)
 bfs.process_graph(1)
 
 print "\nFind shortest path from 1 to 20:"
-print bfs.find_path(1,20)
+print " - ".join(str(i) for i in bfs.find_path(1,20))

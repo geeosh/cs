@@ -26,9 +26,10 @@ class DFS:
 
     self.process_vertex_early(vertex)
 
-    edge = self.graph.edges[vertex]
-    while(edge != None):
-      y = edge.y
+    node = self.graph.edges[vertex]
+
+    while(node != None):
+      y = node.y
       if(self.discovered[y] == False):
         self.parent[y] = vertex
         self.process_edge(vertex,y)
@@ -38,7 +39,8 @@ class DFS:
       
       if(finished):
         return
-      edge = edge.next
+        
+      node = node.next
 
     self.process_vertex_late(vertex)
     self.time += 1

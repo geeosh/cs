@@ -25,17 +25,17 @@ class BFS:
       vertex = queue.popleft()
       self.process_vertex_early(vertex)
       self.processed[vertex] = True
-      p = self.graph.edges[vertex]
+      node = self.graph.edges[vertex]
       
-      while(p != None):
-        y = p.y
+      while(node != None):
+        y = node.y
         if(self.processed[y] == False or self.graph.directed):
           self.process_edge(vertex,y)
         if(self.discovered[y] == False):
           queue.append(y)
           self.discovered[y] = True
           self.parent[y] = vertex
-        p = p.next
+        node = node.next
 
       self.process_vertex_late(vertex)
 
